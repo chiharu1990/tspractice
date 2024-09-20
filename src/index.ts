@@ -1,2 +1,5 @@
-const message: string = "Hello, World!!";
-console.log(message);
+export default {};
+let greeting: string, target: string;
+greeting = "Hello,";
+target = "world!";
+console.log(greeting + target);
