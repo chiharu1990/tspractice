@@ -3,7 +3,7 @@
 Web ブラウザの中で動くプログラミング言語。  
 Web サイト上で操作をしたら表示が書き変わったり、Web サイトのサーバーと通信してデータを取得したりすることができる。
 
-また、以下に記述する Node.js などの JavaScript 実行環境（JavaScript ランタイム）でも動く。
+また、以下に記述する Node.js などの JavaScript 実行環境（JavaScript ランタイムとは何かの項目参照）でも動く。
 
 ECMAScript は言語仕様のことで、JavaScript は ECMAScript 仕様書という文書によって言語仕様が定義されている。  
 ECMAScript は 2015 年に大きくアップデートされた（ES2015）その前と後では大きく違う。
@@ -11,11 +11,11 @@ ECMAScript は 2015 年に大きくアップデートされた（ES2015）その
 ## JavaScript ランタイムとは何か
 
 JavaScript プログラムの実行環境全般のこと  
-Web ブラウザやサーバー上で JavaScript コードを実行するためのソフトウェアスタック（開発に必要なソフトウェアをまとめたもの）
+Web ブラウザやサーバー上で JavaScript コードを実行するためのソフトウェアスタック（開発に必要なソフトウェアをまとめたもの）  
 Node.js、DENO、BUN などがある。
 
 ソフトウェアスタックの構成は？  
-→ JavaScript 実行エンジン（V8 など）と実行基盤（Node.js など）
+→ ランタイムシステム（Node.js など）の中にランタイムエンジン（V8 など）があり、ランタイムライブラリを包括している
 
 広い意味で言うとブラウザも JavaScript ランタイムと言える  
 ブラウザは JavaScript 実行エンジンがあって（Chrome なら V8,FireFox なら SpiderMonkey など）、これらの実行エンジンにモジュールシステムや API などを加えた JavaScript の実行基盤が JavaScript ランタイム
