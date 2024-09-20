@@ -18,7 +18,7 @@ Node.js、DENO、BUN などがある。
 → ランタイムシステム（Node.js など）の中にランタイムエンジン（V8 など）があり、ランタイムライブラリを包括している
 
 広い意味で言うとブラウザも JavaScript ランタイムと言える  
-ブラウザは JavaScript 実行エンジンがあって（Chrome なら V8,FireFox なら SpiderMonkey など）、これらの実行エンジンにモジュールシステムや API などを加えた JavaScript の実行基盤が JavaScript ランタイム
+ブラウザは JavaScript 実行エンジンがあって（Chrome なら V8,FireFox なら SpiderMonkey など）、これらの実行エンジンにモジュールシステムや Web API？？などを加えた JavaScript の実行基盤が JavaScript ランタイム
 
 ## コンパイルとは何か
 
