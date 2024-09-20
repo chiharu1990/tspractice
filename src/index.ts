@@ -1,2 +1,4 @@
-const message: string = "Hello, World!!";
-console.log(message);
+// const message: string = "Hello, World!!";
+const greeting = "Hello,";
+const target = "world!";
+console.log(greeting + target);
