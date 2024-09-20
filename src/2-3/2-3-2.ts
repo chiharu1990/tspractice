@@ -1,3 +1,4 @@
+export default {};
 const width1 = 5;
 const width2 = 8;
 const height: number = 3;
