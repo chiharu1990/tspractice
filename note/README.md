@@ -56,7 +56,7 @@ https://typescriptbook.jp/overview/ecosystem
 エコシステムの例
 
 1. パッケージマネージャー  
-   ライブラリを管理するツール（例：npm,Yarn）
+   パッケージを管理するツール（例：npm,Yarn）
 2. モジュールバンドラー  
    複数の JavaScript のファイルをひとまとめにするためのツール
 3. タスクランナー  
