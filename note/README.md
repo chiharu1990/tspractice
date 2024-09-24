@@ -70,6 +70,12 @@ https://typescriptbook.jp/overview/ecosystem
 
 Node.js のパッケージを管理するシステム  
 アプリケーションを作成するときに必要なパッケージをインストールして使用することができる
+Node.js をインストールすると npm もインストールされる
+
+`npm init` で package.json が作られる
+
+npm を使うときのコマンド（例）  
+`npm run start` `npm run dev` `npm run build`
 
 ### パッケージとは
 
