@@ -88,5 +88,8 @@ npm を使うときのコマンド（例）
 `npm install <パッケージ名>` の形でインストールする
 
 パッケージの配布場所  
-npm の公式サイト？でパッケージを検索するとインストールの仕方が書いてある  
+npm の公式サイトでパッケージを検索するとインストールの仕方が書いてある  
 https://www.npmjs.com/
+
+例：async が配布されている URL
+https://www.npmjs.com/package/async
