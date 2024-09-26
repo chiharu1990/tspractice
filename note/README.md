@@ -72,7 +72,9 @@ Node.js のパッケージを管理するシステム
 アプリケーションを作成するときに必要なパッケージをインストールして使用することができる
 Node.js をインストールすると npm もインストールされる
 
-`npm init` で package.json が作られる
+`npm init` で package.json が作られる  
+`npm init` は初期化処理を行っている。 init は initialize の省略　　
+package.json は json 形式で記載されているインストールしたパッケージの情報を保存するファイル。
 
 npm を使うときのコマンド（例）  
 `npm run start` `npm run dev` `npm run build`
