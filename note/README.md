@@ -77,11 +77,20 @@ Node.js をインストールすると npm もインストールされる
 package.json は json 形式で記載されているインストールしたパッケージの情報を保存するファイル。
 
 npm を使うときのコマンド（例）  
-`npm run start` `npm run dev` `npm run build`
+`npm run start` `npm run dev` `npm run build`  
+`npx`とは
+
+### ライブラリとは
+
+プログラムとその関連ファイルをまとめたもの  
+例：jQuery や、スライダー（Slick.js）など
+
+一つの機能に特化した仕組みが有名になりやすい
 
 ### パッケージとは
 
 プログラムとその関連ファイルをまとめたもの  
+npm でのライブラリをパッケージと呼ぶ  
 例：CSS のフレームワーク TailwindCSS や、React や Vue.js など
 
 パッケージのインストール方法  
@@ -93,3 +102,18 @@ https://www.npmjs.com/
 
 例：async が配布されている URL
 https://www.npmjs.com/package/async
+
+### モジュールとは
+
+モジュールとは、変数や関数などをまとめたもの  
+モジュールは、保守性・名前空間・再利用性のために使われる  
+https://jsprimer.net/basic/module/
+
+### フレームワークとは
+
+枠組み。基本的な機能が備わっている。
+家でいう基礎、土台、梁、柱が備わっているもの
+ランチでいう定食、ご飯とおかずと漬物がセットでついている状態  
+プロジェクトの途中でフレームワークを変えるということはつまり引っ越ししなきゃいけないということ（一大事）  
+だからあんまりしない。
+例：Next.js,Vue.js,jQuery,TailwindCSS
