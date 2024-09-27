@@ -88,8 +88,9 @@ package.json があることのメリット
 - 複数人でプロジェクトを開発する場合に環境を統一することができる
 
 npm を使うときのコマンド（例）  
-`npm run start` `npm run dev` `npm run build`  
-`npm run` で package.json の script 欄に定義したコマンドを実行する。script 欄に start や dev などをあらかじめ定義しておき、それを動かすときに使うコマンド。
+`npm install` パッケージのインストール  
+`npm ci` パッケージをクリーンインストールする  
+`npm run` package.json の scripts 欄に定義したコマンドを実行する。scripts 欄に start や dev などをあらかじめ定義しておき、それを動かすときに使うコマンド。
 
 `npx`とは  
 node package executer  
