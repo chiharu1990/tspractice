@@ -80,7 +80,10 @@ npm を使うときのコマンド（例）
 `npm run start` `npm run dev` `npm run build`  
 `npm run` で package.json の script 欄に定義したコマンドを実行する。script 欄に start や dev などをあらかじめ定義しておき、それを動かすときに使うコマンド。
 
-`npx`とは
+`npx`とは  
+node package executer  
+パッケージの実行を行うツール。npm のバージョン 5.2.0 より同梱されているコマンド。  
+ローカルにインストールされていない機能を一時的にインストールして実行するためのコマンド（実行後は削除される）
 
 ### ライブラリとは
 
