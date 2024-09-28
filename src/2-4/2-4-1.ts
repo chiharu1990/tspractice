@@ -14,7 +14,7 @@ console.log(18n / 12n); //1n bigintは整数のみ扱われるため割り切れ
 console.log(18 % 12); //6
 console.log(18n % 12n); //6n
 
-// res1の肩はnumber型
+// res1の型はnumber型
 const res1 = 5 - 1.86;
 // res2の型はbigint型
 const res2 = 2n ** 5n;
