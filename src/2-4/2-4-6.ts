@@ -49,7 +49,7 @@ rl.question("名前を入力してください", (name) => {
 // 短絡評価とは、&&や||の演算子を用いて左側の値を返す場合は、右側は評価されないという意味
 // 短絡評価は関数呼び出しの処理が不要な場合には行いたくない場合に有用
 // 例：const displayName = name || getDefaultName();
-// nameがfalseだった時のみgetDEfaultName();が実行される。
+// nameがfalseだった時のみgetDefaultName();が実行される。
 // 必要のない処理はなるべく行わない方が良いので、このような短絡評価の機能がある
 
 
