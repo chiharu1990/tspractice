@@ -25,5 +25,5 @@ while(i <= 100){
   if(i % 2 === 1){ // iが奇数の時true
     continue; // 実行されたらwhile文の先頭に戻る
   }
-  console.log(i); // iが偶数の時に事項される
+  console.log(i); // iが偶数の時に実行される
 }
