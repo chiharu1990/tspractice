@@ -49,4 +49,5 @@
 `git push`はローカルリポジトリのコミット履歴をリモートリポジトリに送信して更新するコマンド
 
 `git push origin ブランチ名` 指定したブランチをリモートリポジトリ上の同名のブランチに送信する  
-現在作業中のブランチ（例:241007-git-note）を追加する場合は、`git push origin 241007-git-note`とする
+現在作業中のブランチ（例:241007-git-note）を追加する場合は、`git push origin 241007-git-note`とする  
+`git push origin HEAD`でも作業中のブランチをpushすることができる。
