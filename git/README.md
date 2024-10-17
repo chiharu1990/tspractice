@@ -53,3 +53,12 @@
 `git push origin ブランチ名` 指定したブランチをリモートリポジトリ上の同名のブランチに送信する  
 現在作業中のブランチ（例:241007-git-note）を追加する場合は、`git push origin 241007-git-note`とする  
 `git push origin HEAD`でも作業中のブランチをpushすることができる。
+
+### git pushだけ実行したら
+`The current branch 241007-git-note has no upstream branch.`のエラーでpushできない。  
+これは「上流ブランチがありません」という旨のエラー
+上流ブランチとは上の例で言うと`origin/241007-git-note`のこと（リモート追跡ブランチ）  
+ローカルブランチと上流ブランチが設定できていないので、エラーになる  
+上流ブランチとして設定すると、`git push`するときにリモートリポジトリ名とブランチ名を省略できる(`git push`だけでpushできるようになる)  
+上流ブランチの設定は`git branch -u <リモート追跡ブランチ> <ローカルブランチ>`で設定できる　　
+`git push -u origin <ローカルブランチ>`とすることで、push時に上流ブランチを設定することができる
