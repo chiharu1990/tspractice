@@ -22,7 +22,16 @@
   name: string;
   age: number;
 }
-`
+`  
+type文を使わずにオブジェクトの変数に型注釈をつけると以下になる  
+`const user: {
+  name: string;
+  age: number;
+} = {
+  name: "taro", // 文字列型
+  age: 12, // 数値型
+};`
+
 ### type文とは何か
 型注釈に名前をつけること
 `type 名前 = 型;`
