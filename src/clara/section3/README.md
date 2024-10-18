@@ -54,7 +54,11 @@ type文を使わずにオブジェクトの変数に型注釈をつけると以�
 const numbers:[] = [2, 5, 8];　→　間違い　　
 `const numbers:number[] = [2, 5, 8];`  
 配列の型は`型[]`という構文で表される  
-// タプル型として型づけすること
-const titleAndPrice:<string, number> = ["Learning TypeScript", 2700];
+### タプル型として型づけすること
+const titleAndPrice:<string, number> = ["Learning TypeScript", 2700]; → 間違い  
+`const titleAndPrice:[string, number] = ["Learning TypeScript", 2700];`  
+タプル型は要素が固定された配列型  
+タプル型の構文は、[]の中に型をコンマで並べて書く
+
 ## 次の関数の返り値は何になるか
 20
