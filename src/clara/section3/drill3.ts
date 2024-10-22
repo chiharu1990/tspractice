@@ -11,8 +11,8 @@ const member = {
 // 以下を書き換えてください。
 // 完成形:
 // { stageName:"TY", birth: 1995, country: "South Korea" }
-member.stageName = "TY";
-const result = member;
+const result = {...member};
+result.stageName = "TY";
 
 // 以下の行は変更しない
 console.log(result); // => { stageName:"TY", birth: 1995, country: "South Korea" }
