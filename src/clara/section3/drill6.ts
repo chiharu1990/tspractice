@@ -9,11 +9,7 @@ const member = {
 };
 
 // ここに何かしらを追加
-const {stageName,position,group} = member;
-const unit = {
-  position: position,
-  group: group,
-}
+const {stageName, ...unit} = member;
 
 // 以下の行は変更せず、コンソールに "Taeyong" を表示してください
 console.log(stageName); // "Taeyong"
