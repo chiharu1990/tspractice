@@ -6,8 +6,8 @@ const birth = 1995;
 // result が 以下の値になるように書いてください
 // { stageName: "Taeyong", birth: 1995 }
 const result = {
-  stageName: stageName,
-  birth: birth,
+  stageName,
+  birth,
 };
 
 // 以下の行は変更せず、コンソールにコメントにある値を表示してください。
