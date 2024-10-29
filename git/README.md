@@ -65,3 +65,20 @@
 一度設定すれば、そのあとのpush時は`git push`でブランチ名を入れずにpushできる
 
 `-u`は`--set-upstream-to=`と同じ
+
+## git merge
+2つのブランチを1つに統合する  
+`git merge <統合したいブランチ名>`で統合できる。  
+mainブランチと作業用のブランチがあり、作業用のブランチの変更をmainブランチ反映したい時は、  
+1. mainブランチにチェックアウト
+2. `git merge <作業用ブランチ>`する  
+
+その他に、作業ブランチで制作している途中で、mainブランチ上でコミットが進んだ時、mainブランチの新しいコミットを取り込みたい時は  
+`git merge main` とすることで、mainブランチの変更を作業用のブランチに取り込むことができる。
+
+## git pull
+## git rebase
+## git reset
+## git revert
+## git stash
+## git status
