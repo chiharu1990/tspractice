@@ -117,6 +117,19 @@ rebaseは、1つのブランチから別のブランチへの変更を統合す�
 `コミットID` そのコミットIDまで巻き戻す
 
 `git reflog`を使えばコミットIDやn個前のコミットを調べることができる
+
 ## git revert
+指定したコミットと逆の内容をコミットする
+`git revert <打ち消したいコミットID>`  
+例：index.htmlにテキストを追加してコミット後、別ファイル（index2.html）を追加してコミットした状態で、先に対応したindex.htmlのテキスト変更を取り消したい時  
+1. `git reflog`を使って該当のコミットIDを調べる
+2. `git revert <コミットID>`を実行
+3. コミットメッセージの編集画面になるので、何も問題なければ`:wq`で抜ける
+![alt text](revert1.png)
+4. index.htmlで行った変更が打ち消されたものがコミットされる
+![alt text](revert2.png)
+
+revertは新たにコミットをするコマンドで、コミット履歴を改変することはない。
+
 ## git stash
 ## git status
