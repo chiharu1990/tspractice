@@ -142,3 +142,20 @@ stash@{n}は各スタッシュの個別の名前
 `git stash pop stash@{n}` スタッシュの復活と削除を同時に行う
 
 ## git status
+作業ディレクトリの現在の状態を確認するもの  
+`git status`を実行すると以下のように表示される  
+- On branch → 現在のブランチ名
+![alt text](status1.png)
+- Your branch is up to date with 'origin/branch_name'... → リモートブランチとの同期情報
+![alt text](status2.png)
+- Changes to be committed: → ステージングエリアにある次回コミットで追加される予定のファイル
+![alt text](status3.png)
+- Changes not staged for commit: → 追跡されているファイルの中で変更されているがステージングされていないファイル
+![alt text](status4.png)
+- Untracked files: → 新規作成されたが、gitにまだ追跡されていないファイル
+![alt text](status5.png)
+
+`git status -s` 状態を簡潔に表示する（`-s`は`--short`と同じ）
+- `M` 修正されたファイル
+- `A` ステージングされた新しいファイル
+- `??` 追跡されていないファイル
