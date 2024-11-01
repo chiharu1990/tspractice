@@ -155,7 +155,13 @@ rebaseは、コミットを作り直して、ログをきれいにするため�
 `HEAD@{n}` n個前のコミット  
 `コミットID` そのコミットIDまで巻き戻す
 
-`git reflog`を使えばコミットIDやn個前のコミットを調べることができる
+### コミットIDを調べるコマンド
+- `git log` 各コミットのID、メッセージ、作成者、日時などが表示される
+![alt text](gitlog.png)
+- `git log --oneline` コミットIDの短縮版とコミットメッセージが1行で表示される簡易版のログ
+![alt text](gitlog2.png)
+- `git reflog`すべてのHEADの履歴を確認することができる
+![alt text](gitreflog.png)
 
 ## git revert
 指定したコミットと逆の内容をコミットする  
