@@ -178,7 +178,8 @@ rebaseは、コミットを作り直して、ログをきれいにするため�
 stash@{n}は各スタッシュの個別の名前  
 `git stash apply stash@{n}` 復活したいスタッシュの名前を指定して作業内容を復活する  
 `git stash drop stash@{n}` スタッシュの削除  
-`git stash pop stash@{n}` スタッシュの復活と削除を同時に行う
+`git stash pop stash@{n}` スタッシュの復活と削除を同時に行う  
+また、`git stash apply`のようにstash番号を指定しない場合、一番最後にスタッシュに保存した内容が復活する。
 
 ## git status
 作業ディレクトリの現在の状態を確認するもの  
