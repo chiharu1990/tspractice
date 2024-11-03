@@ -43,7 +43,29 @@ const sum = (num1: number,  num2: number) : number => {
 }
 ```
 ### コールシグネチャとは何か (具体例を含めて回答すること)
-
+コールシグネチャはオブジェクト型の中で使用できる構文であり、`(引数リスト): 返り値の型`と書く  
+コールシグネチャを用いることで「プロパティを持った関数」の型を表現することができる  
+```
+type MathType = {
+  (a: number, b: number) : number;
+}
+const Add: MathType = (a, b) => {
+  return a + b;
+}
+```
+普通の関数型もコールシグネチャで表すことができる
+次の型は同じ意味となる
+```
+type F = (arg: number) => number;
+type E = {(arg: number) :number };
+```
+オブジェクト型がコールシグネチャを複数持つこともできる
+```
+type SwapFunc = {
+  (arg: string): number; //引数をstringで渡すとnumber型が返る関数の型
+  (arg: number): boolean; //引数をnumberで渡すとboolean型が返る関数の型
+}
+```
 ### ジェネリクスとは何か (具体例を含めて回答すること)
 型引数を持った関数のこと 
 
