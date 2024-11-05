@@ -9,8 +9,11 @@ const promise = new Promise((resolve, reject) => {
   }, 1000);
 });
 
-promise.then(() => {
-  console.log("fulfilledとなった")
-}, (error) => {
-  // この行は呼び出されない
-}); 
+promise.then(
+  () => {
+    console.log("fulfilledとなった");
+  },
+  (error) => {
+    // この行は呼び出されない
+  }
+);

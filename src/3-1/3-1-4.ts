@@ -13,16 +13,16 @@ import { createInterface } from "readline";
 
 const rl = createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 const messeges = {
   good: "0以上の値が入力されました",
-  bad: "負の数値を入力しないでください"
-}
+  bad: "負の数値を入力しないでください",
+};
 
 rl.question("数値を入力してください", (line) => {
   const num = Number(line);
-  console.log(messeges[num >= 0 ? "good":"bad"]);
+  console.log(messeges[num >= 0 ? "good" : "bad"]);
   rl.close();
 });

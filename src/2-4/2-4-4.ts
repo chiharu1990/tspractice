@@ -5,7 +5,7 @@ export default {};
 // console.log(left1 < right1); //true
 // const left2 = 100n, right2 = 50n;
 // console.log(left2 >= right2); //true
-// const left3 = -10, right3 = 0; 
+// const left3 = -10, right3 = 0;
 // console.log(left3 > right3); //false
 // const left4 = 12n, right4 = 8n;
 // console.log(left4 <= right4) //false
@@ -24,12 +24,12 @@ import { createInterface } from "readline";
 
 const rl = createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
-rl.question("パスワードを入力してください",(password) => {
-  if(password === "password"){
-    console.log("ようこそ！")
+rl.question("パスワードを入力してください", (password) => {
+  if (password === "password") {
+    console.log("ようこそ！");
   } else {
     console.log("だあれ？");
   }
@@ -38,8 +38,8 @@ rl.question("パスワードを入力してください",(password) => {
 
 // == と === の違い
 const str: any = "3";
-console.log(str == 3) // true（暗黙の型変換によって文字列が数値に変換されているため）
-console.log(str === 3) // false（異なる型を比較しているため）
+console.log(str == 3); // true（暗黙の型変換によって文字列が数値に変換されているため）
+console.log(str === 3); // false（異なる型を比較しているため）
 
 // コラム5 NaNを判定する方法
 const x = NaN;

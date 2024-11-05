@@ -5,8 +5,8 @@ const xRepeat = (num: number) => "x".repeat(num);
 
 // 関数の返り値を返さない場合も型注釈を省略できる
 const g = (num: number) => {
-  for(let i = 0; i < num; i++){
+  for (let i = 0; i < num; i++) {
     console.log("Hello, World!");
   }
-}
+};
 // gの型は(num: number) => voidとなる

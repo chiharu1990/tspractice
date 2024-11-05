@@ -12,20 +12,21 @@ Mary Sue,14,1
 `;
 
 // 3.8の別解
-const users: User[] = data.split("\n")
-  .filter(line => line !== "")
-  .map(line => {
+const users: User[] = data
+  .split("\n")
+  .filter((line) => line !== "")
+  .map((line) => {
     const [name, ageString, premiumUserString] = line.split(",");
 
     return {
       name,
       age: Number(ageString),
-      premiumUser: premiumUserString === "1"
+      premiumUser: premiumUserString === "1",
     };
-  })
+  });
 
-for(const user of users){
-  if(user.premiumUser){
+for (const user of users) {
+  if (user.premiumUser) {
     console.log(`${user.name}(${user.age})はプレミアムユーザーです。`);
   } else {
     console.log(`${user.name}(${user.age})はプレミアムユーザーではありません。`);

@@ -15,12 +15,12 @@ type Human = {
 // console.log(calcBMI(uhyo));
 
 // 関数の引数に対して分割代入をする
-const calcBMI = function({height,weight}: Human): number {
+const calcBMI = function ({ height, weight }: Human): number {
   return weight / height ** 2;
 };
 const uhyo: Human = {
-  height:  1.84,
-  weight: 72
-}
+  height: 1.84,
+  weight: 72,
+};
 
 console.log(calcBMI(uhyo));

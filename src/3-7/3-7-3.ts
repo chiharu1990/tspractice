@@ -19,6 +19,6 @@ console.log("Hello, abbbbbbc world! abbbc".replace(/ab+c/g, "foobar")); // Hello
 // matchメソッド gフラグを持っている場合
 
 const result = "Hello, abbbbbbc world! abc".match(/a(b+)c/g);
-if(result !== null){
+if (result !== null) {
   console.log(result); // [ 'abbbbbbc', 'abc' ]
 }

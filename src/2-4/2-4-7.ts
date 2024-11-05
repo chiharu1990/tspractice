@@ -12,12 +12,11 @@ const rl = createInterface({
 
 rl.question("数値を入力してください", (line) => {
   const num = Number(line);
-  const message = 0 <= num && num < 100 
-    ? `${num}は0以上100未満です`
-    : `${num}は0以上100未満ではありません`;
+  const message =
+    0 <= num && num < 100 ? `${num}は0以上100未満です` : `${num}は0以上100未満ではありません`;
   console.log(message);
   rl.close();
-})
+});
 
 // 条件演算子の返り値の型は真の時の式と偽の時の式の型によって決まる
 // 条件式の型（?の前の式）はなんでも構わない。boolean以外の型が条件として与えられた場合はその値を真偽値に変換してから条件判定に用いられる

@@ -1,11 +1,11 @@
 export default {};
-function taskA () {
+function taskA() {
   console.log("タスクAを実行 at" + Date.now());
 }
-function taskB () {
+function taskB() {
   console.log("タスクBを実行 at" + Date.now());
 }
-function taskAsync () {
+function taskAsync() {
   console.log("非同期のタスクを実行 at" + Date.now());
 }
 

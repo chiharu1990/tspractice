@@ -1,28 +1,27 @@
 export default {};
 // 変数fooとbarに入っているオブジェクトが同じである例
-// const foo = {num: 1234}; 
+// const foo = {num: 1234};
 // const bar = foo;
 // console.log(bar.num); //1234
 // bar.num = 0;
 // console.log(foo.num) //0
 
 // 明示的にコピーする ①スプレッド構文を使う
-// const foo = {num: 1234}; 
+// const foo = {num: 1234};
 // const bar = { ...foo  };
 // console.log(bar.num); //1234
 // bar.num = 0;
 // console.log(foo.num) //1234
 
 //スプレッド構文を使わずに書くこともできる
-// const foo = {num: 1234}; 
+// const foo = {num: 1234};
 // const bar = {num: 1234};
 // console.log(bar.num); //1234
 // bar.num = 0;
 // console.log(foo.num) //1234
 
-
 // スプレッド構文を使うときはネストしたオブジェクトに気をつける
-// const foo = {obj: { num: 1234}}; 
+// const foo = {obj: { num: 1234}};
 // const bar = {...foo};
 // console.log(bar.obj.num); //1234
 // bar.obj.num = 0;
@@ -30,8 +29,8 @@ export default {};
 // ネストしたオブジェクトは同じオブジェクトのまま
 
 //ネストしたオブジェクトに対してもスプレッド記法を使うことでコピーすることができる
-// const foo = {obj: { num: 1234}}; 
-// const bar = {obj: {...foo.obj}}; 
+// const foo = {obj: { num: 1234}};
+// const bar = {obj: {...foo.obj}};
 // console.log(bar.obj.num); //1234
 // bar.obj.num = 0;
 // console.log(foo.obj.num) //1234

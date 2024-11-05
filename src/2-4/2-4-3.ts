@@ -4,13 +4,13 @@ import { createInterface } from "readline";
 
 const rl = createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
-rl.question('名前を入力してください',(name) => {
+rl.question("名前を入力してください", (name) => {
   console.log("こんにちは、" + name + "さん");
   rl.close();
-})
+});
 
 // +は文字列の連結ができる
 // +は文字列が渡されてもコンパイルエラーにはならない

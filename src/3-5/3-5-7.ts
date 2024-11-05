@@ -1,6 +1,6 @@
 export default {};
 // タプル型
-let tuple:[string,number] = ["foo", 0];
+let tuple: [string, number] = ["foo", 0];
 tuple = ["aiueo", -555];
 const str = tuple[0]; //strはstring型
 const num = tuple[1]; //numはnumber型

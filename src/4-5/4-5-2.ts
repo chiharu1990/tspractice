@@ -10,12 +10,12 @@ export default {};
 // }
 
 // ブロックを分ければ同じ変数名を複数回登場させることもできる
-function sabayomi(age: number){
-  if(age >= 30) {
-    const lie = age - 10
+function sabayomi(age: number) {
+  if (age >= 30) {
+    const lie = age - 10;
     return lie;
   }
-  if(age >= 20){
+  if (age >= 20) {
     const lie = age - 5;
     return lie;
   }
@@ -23,10 +23,10 @@ function sabayomi(age: number){
 }
 
 // for文の( )の中で変数を宣言した場合、その変数は「for文の中のみ」という特殊なスコープを持つ
-function sum(arr: number[]){
+function sum(arr: number[]) {
   let result = 0;
   // 変数iはfor文の中のみのスコープに存在する
-  for(let i = 0; i < arr.length; i++){
+  for (let i = 0; i < arr.length; i++) {
     result += arr[i];
   }
   // 変数iはfor文の中のみなのでアクセスできない

@@ -1,6 +1,6 @@
 export default {};
 // result がarr1のコピーとなるように書いてください。
-const arr1 = ['one', 'two', 'three'];
+const arr1 = ["one", "two", "three"];
 
 const result = [...arr1];
 
