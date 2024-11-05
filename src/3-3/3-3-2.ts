@@ -2,12 +2,12 @@ export default {};
 // 例1:HumanはAnimalの部分型
 type Animal = {
   age: number;
-}
+};
 
 type Human = {
   age: number;
   name: string;
-}
+};
 
 // 部分型の条件
 // Animalに存在するプロパティはHumanにも存在している
@@ -21,14 +21,14 @@ type AnimalFamily = {
   mother: Animal;
   father: Animal;
   child: Animal;
-}
+};
 
 type HumanFamily = {
   familyName: string;
   mother: Human;
   father: Human;
   child: Human;
-}
+};
 
 // AnimalFamilyに存在しているプロパティはHumanFamilyにも存在する（部分型の条件1）
 // HumanFamilyのmotherプロパティはHuman型で、AnimalFamilyのmotherプロパティはAnimal型

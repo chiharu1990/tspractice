@@ -10,29 +10,35 @@ export default {};
 function dummyFetch(path) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if(path.startsWith("/success")){
-        resolve({body: `Response body of ${path}`});
+      if (path.startsWith("/success")) {
+        resolve({ body: `Response body of ${path}` });
       } else {
         reject(new Error("NOT FOUND"));
       }
-    }, 1000 * Math.random())
-  })
+    }, 1000 * Math.random());
+  });
 }
 
 // thenメソッドで成功時と失敗時に呼ばれるコールバック関数を登録
 // /success/data のリソースは存在するので成功し、onFulfilledが呼ばれる
-dummyFetch("/success/data").then(function onFulfilled(response) {
-  console.log(response); // => { body: "Response body of /success/data" }
-}, function onRejected(error) {
-  // この行は実行されない
-});
+dummyFetch("/success/data").then(
+  function onFulfilled(response) {
+    console.log(response); // => { body: "Response body of /success/data" }
+  },
+  function onRejected(error) {
+    // この行は実行されない
+  }
+);
 
 // /failure/data のリソースは存在しないのでonRejectedが呼ばれる
-dummyFetch("/failure/data").then(function onFulfilled(response){
-  // この行は実行されない
-}, function onRejected(error){
-  console.log(error); // Error: "NOT FOUND";
-})
+dummyFetch("/failure/data").then(
+  function onFulfilled(response) {
+    // この行は実行されない
+  },
+  function onRejected(error) {
+    console.log(error); // Error: "NOT FOUND";
+  }
+);
 
 // 一定時間後に解決されるPromiseインスタンスを返す
 // このPromiseインスタンスに対してthenメソッドで成功時のコールバック関数だけを登録している
@@ -61,6 +67,6 @@ errorPromise("thenでエラーハンドリング").then(undefined, (error) => {
 });
 
 // 推奨：catchメソッドで失敗時のコールバック関数を登録
-errorPromise("catchでエラーハンドリング").catch(error => {
-  console.log(error.message);// catchでエラーハンドリング
+errorPromise("catchでエラーハンドリング").catch((error) => {
+  console.log(error.message); // catchでエラーハンドリング
 });

@@ -31,6 +31,5 @@ let foo = 10;
 // console.log(--foo); //9
 // console.log(foo); //9
 
-
 // console.log("++foo",++foo); //11
 // console.log("foo--",foo--); //11

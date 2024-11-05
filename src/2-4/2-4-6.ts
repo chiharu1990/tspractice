@@ -1,6 +1,7 @@
 export default {};
 
-const input1 = "123", input2 = "";
+const input1 = "123",
+  input2 = "";
 const input1isNotEmpty = !!input1;
 console.log(input1isNotEmpty); //true
 // input1を真偽値に変換した結果はtrue、!はオペランドを真偽値に変換してさらに反転している。
@@ -26,11 +27,11 @@ console.log(input2isNotEmpty); //false
 // console.log(x || y); //"foo"
 // x（"foo"）は真偽値に変換するとtrueなのでxを返す
 
-const x = 0, y = 123;
+const x = 0,
+  y = 123;
 console.log(x || y); //123
 import { get } from "http";
 // x(0)は真偽値に変換するとfalseなので、yを返す
-
 
 import { createInterface } from "readline";
 
@@ -41,9 +42,9 @@ const rl = createInterface({
 
 rl.question("名前を入力してください", (name) => {
   const displayName = name || "名無し"; //入力がなかった時、空文字列は真偽値に変換するとfalseとなるため、"名無し"という結果が返る
-  console.log(`こんにちは${displayName}さん`)
+  console.log(`こんにちは${displayName}さん`);
   rl.close();
-})
+});
 
 // && や ||の特徴：短絡評価
 // 短絡評価とは、&&や||の演算子を用いて左側の値を返す場合は、右側は評価されないという意味
@@ -51,7 +52,6 @@ rl.question("名前を入力してください", (name) => {
 // 例：const displayName = name || getDefaultName();
 // nameがfalseだった時のみgetDefaultName();が実行される。
 // 必要のない処理はなるべく行わない方が良いので、このような短絡評価の機能がある
-
 
 // ??の場合
 // 左側のオペランドがnull、またはundefinedの時のみ右側のオペランドを返し、それ以外は左側のオペランドを返す

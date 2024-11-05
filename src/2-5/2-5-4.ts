@@ -6,8 +6,8 @@ const rl = createInterface({
   output: process.stdout,
 });
 
-rl.question("コマンドを入力してください",(name) => {
-  switch(name){
+rl.question("コマンドを入力してください", (name) => {
+  switch (name) {
     case "greet":
       console.log("こんにちは");
       break;
@@ -17,6 +17,6 @@ rl.question("コマンドを入力してください",(name) => {
       break;
     default:
       console.log(`コマンド「${name}」を認識できませんでした`);
-  };
+  }
   rl.close();
 });

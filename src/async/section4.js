@@ -26,10 +26,10 @@ export default {};
 // コールバック関数における例外はコールバック関数内で同期的なエラーとしてキャッチする必要がある
 setTimeout(() => {
   // 非同期処理の中
-  try{
+  try {
     throw new Error("エラー");
-  } catch(error) {
-    console.log("エラーをキャッチできる")
+  } catch (error) {
+    console.log("エラーをキャッチできる");
   }
 }, 10);
 console.log("この行は実行される");

@@ -7,6 +7,6 @@ function throwPromise() {
   });
 }
 
-throwPromise().catch(error => {
+throwPromise().catch((error) => {
   console.log(error.message); // => "例外が発生"
 });

@@ -13,11 +13,11 @@ const promise = new Promise((resolve, reject) => {
 
 const onFulfilled = () => {
   console.log("resolsveされたときに呼ばれる");
-}
+};
 
 const onRejected = () => {
   console.log("rejectされたときに呼ばれる");
-}
+};
 
 // thenメソッドで成功時と失敗時に呼ばれるコールバック関数を登録
 promise.then(onFulfilled, onRejected);

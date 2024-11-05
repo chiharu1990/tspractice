@@ -11,7 +11,7 @@ console.log(result);
 // const value1 = false;
 // const value2 ="value1がfalse"
 // const result = value1 || value2;
-// console.log(result); 
+// console.log(result);
 
 // 問題3
 // const value1 = false;
@@ -30,4 +30,4 @@ const isIcon = true;
 // if(isIcon) {
 //   console.log("hoge");
 // }
-console.log(isIcon && "hoge")
+console.log(isIcon && "hoge");

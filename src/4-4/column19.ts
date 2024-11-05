@@ -1,5 +1,5 @@
 export default {};
-function makeTriple<T>(x: T, y: T, z: T): T[]{
+function makeTriple<T>(x: T, y: T, z: T): T[] {
   return [x, y, z];
 }
 
@@ -17,14 +17,12 @@ function double<T>(func: (arg: T) => T): (arg: T) => T {
 
 type NumberToNumber = (arg: number) => number;
 
-const plus2: NumberToNumber = double(x => x +1);
-console.log(plus2(10));// 12
+const plus2: NumberToNumber = double((x) => x + 1);
+console.log(plus2(10)); // 12
 
 // 型推論がunknown型になる場合
 // function double<T>(func: (arg: T) => T): (arg: T) => T {
 //   return (arg) => func(func(arg));
 // }
 
-
 // const plus2 = double(x => x +1); // エラー：'x' is of type 'unknown'.
-

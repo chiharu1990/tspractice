@@ -15,7 +15,7 @@ export default {};
 
 //プロパティ名の部分は文字列リテラルを使うことができる
 const obj: {
-  "foo bar": number,
+  "foo bar": number;
 } = {
   "foo bar": 123,
-}
+};

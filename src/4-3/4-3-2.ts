@@ -1,11 +1,11 @@
 export default {};
 type HasName = {
   name: string;
-}
+};
 type HasNameAge = {
   name: string;
   age: number;
-}
+};
 
 const showName = (obj: HasName) => {
   console.log(obj.name);

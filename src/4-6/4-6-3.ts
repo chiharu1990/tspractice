@@ -4,7 +4,7 @@ export default {};
 //   for(let elm of array){
 //     arr.push(callback(elm));
 //   }
-  
+
 //   return arr;
 // }
 
@@ -12,14 +12,13 @@ export default {};
 // const result = map(data, (x) => x * 10);
 // console.log(result);
 
-
 // やりかけ未解決
 // function map<T>(array: T[], callback: (x: T) => T): T[] {
 //   const arr = [];
 //   for(let elm of array){
 //     arr.push(callback(elm));
 //   }
-  
+
 //   return arr;
 // }
 
@@ -28,12 +27,12 @@ export default {};
 // console.log(result);
 
 // 答え
-function map<T,U>(array: T[], callback: (value: T) => U): U[] {
+function map<T, U>(array: T[], callback: (value: T) => U): U[] {
   const arr: U[] = [];
-  for(let elm of array){
+  for (let elm of array) {
     arr.push(callback(elm));
   }
-  
+
   return arr;
 }
 

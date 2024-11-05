@@ -2,14 +2,14 @@ export default {};
 // 返り値の型注釈がある場合とない場合でコンパイルエラーの発生位置が変わる場合がある
 function range(min: number, max: number): number[] {
   const result = [];
-  for(let i = min; i <= max; i++){
+  for (let i = min; i <= max; i++) {
     result.push(i);
   }
   return result;
 }
 
-const arr = range(5,10);
-for(const value of arr) console.log(value);
+const arr = range(5, 10);
+for (const value of arr) console.log(value);
 
 // 関数内のreturn result;を書き忘れた時、rangeの宣言部分でコンパイルエラーとなる
 // function range(min: number, max: number): number[] { // エラー発生箇所
@@ -26,7 +26,7 @@ for(const value of arr) console.log(value);
 // 返り値がnumber[]型であると明記しているのにrangeが何も返り値を返していないよ、とTypeScriptが検出してくれている
 
 // rangeに返り値の型注釈が書かれていない場合、エラーは別の場所で発生する
-// function range(min: number, max: number) { 
+// function range(min: number, max: number) {
 //   const result = [];
 //   for(let i = min; i <= max; i++){
 //     result.push(i);

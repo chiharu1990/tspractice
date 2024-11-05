@@ -21,7 +21,7 @@ export default {};
 //   for(let i = 0; i< nums.length; i++){
 //     nums[i] = 0;
 //   }
-  
+
 // }
 
 // // fillZeroにはnumber[]型を与えることができる
@@ -30,20 +30,20 @@ export default {};
 
 // // fillZeroにreadonly number[]型を与えるのはコンパイルエラー
 // const nums2: readonly number[] = [1, 1, 2, 3, 5, 8];
-// console.log(fillZero(nums2)); 
+// console.log(fillZero(nums2));
 // // エラー：rgument of type 'readonly number[]' is not assignable to parameter of type 'number[]'.
 // // The type 'readonly number[]' is 'readonly' and cannot be assigned to the mutable type 'number[]'.
 
 // オブジェクトの読み取り専用プロパティの型について
-type User = {name: string};
-type ReadonlyUser = {readonly name: string};
+type User = { name: string };
+type ReadonlyUser = { readonly name: string };
 
 const uhyoify = (user: User) => {
   user.name = "uhyo";
 };
 
 const john: ReadonlyUser = {
-  name: "john Smith"
+  name: "john Smith",
 };
 
 // これはコンパイルエラー（john.nameはreadonlyなので）
@@ -51,4 +51,4 @@ const john: ReadonlyUser = {
 
 // これはエラーにならない
 uhyoify(john);
-console.log(john.name) // "uhyo"と表示され、上書きされてしまっている
+console.log(john.name); // "uhyo"と表示され、上書きされてしまっている

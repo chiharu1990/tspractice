@@ -5,15 +5,15 @@ const member = {
   birth: 1995,
   country: "South Korea",
   position: ["Rapper", "Dancer"],
-  group: [ "NCT U", "NCT127", "SuperM" ],
+  group: ["NCT U", "NCT127", "SuperM"],
 };
 
 // ここに何かしらを追加
-const {stageName, ...unit} = member;
+const { stageName, ...unit } = member;
 
 // 以下の行は変更せず、コンソールに "Taeyong" を表示してください
 console.log(stageName); // "Taeyong"
 
 // 以下の行は変更せず、コンソールにコメントにある値を表示してください。
-console.log(unit.position) //=> ["Rapper", "Dancer"]
-console.log(unit.group) //=> [ "NCT U", "NCT127", "SuperM" ]
+console.log(unit.position); //=> ["Rapper", "Dancer"]
+console.log(unit.group); //=> [ "NCT U", "NCT127", "SuperM" ]

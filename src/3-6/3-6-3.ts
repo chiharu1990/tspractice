@@ -32,13 +32,13 @@ export default {};
 // 配列arrの1番目と3番目と5番目の要素を取得したいとき
 const arr = [1, 2, 4, 8, 16, 32];
 
-const[,foo,,bar,,baz] = arr;
+const [, foo, , bar, , baz] = arr;
 console.log(foo); // 2
 console.log(bar); // 8
 console.log(baz); // 32
 
 // タプル型に対して分割代入をする
-const tuple:[string, number] = ["uhyo", 26];
+const tuple: [string, number] = ["uhyo", 26];
 // myNameはstgring型、ageはnumber型になる
 const [myName, age] = tuple;
 console.log(myName); //"uhyo" string型
