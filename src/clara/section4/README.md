@@ -93,7 +93,7 @@ console.log(sum<string>("a", "b")); // [ 'a', 'b' ]
 
 ```
 // num2はオプショナル引数
-const sum = (num1: number, num2?: number) : number[] => {
+const returnNumberArray = (num1: number, num2?: number) : number[] => {
   const arr: number[] = [];
   if(num2 === undefined) {
     arr.push(num1);
