@@ -26,14 +26,14 @@ arr.map((elm: number) => {
 
 ### 引数に2つの数値を受け取り、それを足し合わせた数値を返す関数を関数宣言を書くこと (引数・戻り値に型注釈をつけること)
 ```
-const sum = function(num1: number,  num2: number): number{
-  return num1 + num2;;
+function sum(num1: number,  num2: number):number {
+  return num1 + num2;
 }
 ```
 ### 上記と同じ関数を、関数式として書くこと
 ```
-function sum(num1: number,  num2: number):number {
-  return num1 + num2;
+const sum = function(num1: number,  num2: number): number{
+  return num1 + num2;;
 }
 ```
 ### 上記と同じ関数を、アロー関数式として書くこと
