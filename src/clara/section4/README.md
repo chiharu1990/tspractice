@@ -106,6 +106,19 @@ const returnNumberArray = (num1: number, num2?: number) : number[] => {
 
 console.log(returnNumberArray(1)); // [ 1 ]
 
+// この関数の条件式部分の別の書き方
+const returnNumberArray = (num1: number, num2?: number) : number[] => {
+  const arr = [];
+  arr.push(num1); // num1はnum2がなくてもpushするため、先にpushする
+  if(num2 !== undefined){ // num2の有無の分岐
+    arr.push(num2);
+  }
+  return arr;
+};
+
+console.log(returnNumberArray(1)); // [ 1 ]
+console.log(returnNumberArray(1,5)); // [ 1, 5 ]
+
 // num2のデフォルト値は0
 const returnNumberArray = (num1: number, num2: number = 0) : number[] => {
   const arr: number[] = [];
