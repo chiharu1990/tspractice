@@ -107,7 +107,7 @@ const returnNumberArray = (num1: number, num2?: number) : number[] => {
 console.log(returnNumberArray(1)); // [ 1 ]
 
 // num2のデフォルト値は0
-const sum = (num1: number, num2: number = 0) : number[] => {
+const returnNumberArray = (num1: number, num2: number = 0) : number[] => {
   const arr: number[] = [];
   if(num2 === 0) {
     arr.push(num1);
@@ -117,7 +117,7 @@ const sum = (num1: number, num2: number = 0) : number[] => {
   return arr;
 }
 
-console.log(sum(1)); // [ 1 ]
-console.log(sum(1,3)); // [ 1, 3 ]
+console.log(returnNumberArray(1)); // [ 1 ]
+console.log(returnNumberArray(1,3)); // [ 1, 3 ]
 
 ```
