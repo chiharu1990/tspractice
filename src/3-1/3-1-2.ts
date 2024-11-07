@@ -2,7 +2,7 @@ export default {};
 const obj = {
   foo: 555,
   bar: "文字列",
-}
+};
 
 // 例：ユーザーの名前としてユーザーが入力した値（input）を用いるが空文字の場合は""名無し"にする
 // const user = {

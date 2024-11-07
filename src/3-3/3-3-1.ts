@@ -18,7 +18,7 @@ type FooBarBaz = {
 const obj: FooBarBaz = {
   foo: "hi",
   bar: 1,
-  baz: false
+  baz: false,
 };
 
 const obj2: FooBar = obj; //FooBarBaz型はFooBar型の部分型となるので、コンパイルエラーにならない

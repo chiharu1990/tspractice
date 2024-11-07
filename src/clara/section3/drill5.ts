@@ -11,4 +11,4 @@ const result = {
 };
 
 // 以下の行は変更せず、コンソールにコメントにある値を表示してください。
-console.log(result) // => { stageName: "Taeyong", birth: 1995 }
+console.log(result); // => { stageName: "Taeyong", birth: 1995 }

@@ -12,7 +12,7 @@ export default {};
 // 存在しないプロパティを分割代入で取得しようとするのはコンパイルエラー
 const obj = {
   str: "hello,world!",
-  num: 1234
-}
+  num: 1234,
+};
 
 // const {foo} = obj; // エラー：Property 'foo' does not exist on type '{ str: string; num: number; }'.

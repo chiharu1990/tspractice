@@ -2,12 +2,12 @@ export default {};
 // extends構文
 type HasName = {
   name: string;
-}
+};
 type Family<Parent extends HasName, Child extends HasName> = {
   mother: Parent;
   father: Parent;
   child: Child;
-}
+};
 
 // Familyの2つの型引数Parent,Childはともにextends HasNameという制約を持っている
 // Familyを使う際に与える型引数はHasNameの部分型でなければいけない
@@ -20,11 +20,11 @@ type Family<Parent extends HasName, Child extends HasName> = {
 // HumanやAnimalはHasNameの部分型だから
 type Animal = {
   name: string;
-}
+};
 type Human = {
   name: string;
   age: number;
-}
+};
 
 // type T = Family<Animal,Human>;
 

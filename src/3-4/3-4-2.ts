@@ -1,14 +1,14 @@
 export default {};
-type Family<Parent,Child> = {
+type Family<Parent, Child> = {
   mother: Parent;
   father: Parent;
   child: Child;
-}
+};
 
-const obj:Family<number,string> = {
+const obj: Family<number, string> = {
   mother: 0,
   father: 100,
-  child: "1000"
+  child: "1000",
 };
 // Family<number,string>型は{mother: number; father: number; child: number;}型と同じ
 

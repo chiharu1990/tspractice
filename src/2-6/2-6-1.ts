@@ -18,7 +18,7 @@ export default {};
 //     }else if(i % 5 === 0){
 //       console.log("Buzz");
 //       continue;
-//     } 
+//     }
 //     console.log(i);
 //   }
 // };
@@ -40,35 +40,33 @@ export default {};
 //         console.log("Buzz");
 //         i++;
 //         break;
-//       default: 
+//       default:
 //       console.log(i);
 //       i++;
 //     }
 //   }
 // }
 
-
 //結果を1行にまとめて表示する
 let result = "";
-const FizzBuzz = (num:number) => {
-  for(let i = 1; i <= num; i++){
-    if(i > 1){
+const FizzBuzz = (num: number) => {
+  for (let i = 1; i <= num; i++) {
+    if (i > 1) {
       result += " ";
     }
-    if(i % 3 === 0 && i % 5 === 0){
+    if (i % 3 === 0 && i % 5 === 0) {
       result += "FizzBuzz";
       continue;
-    }else if(i % 3 === 0){
+    } else if (i % 3 === 0) {
       result += "Fizz";
       continue;
-    }else if(i % 5 === 0){
+    } else if (i % 5 === 0) {
       result += "Buzz";
       continue;
-    } 
+    }
     result += String(i);
   }
   console.log(result);
 };
-
 
 FizzBuzz(100);

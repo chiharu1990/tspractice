@@ -8,7 +8,7 @@ const rl = createInterface({
 });
 
 rl.question("名前を入力してください", (name) => {
-  if(name === ""){
+  if (name === "") {
     name = "名無し";
   }
   console.log(`こんにちは${name}さん`);
@@ -42,4 +42,4 @@ num -= 200; // numは200(400 - 200)
 num /= 2; // numは100(200 / 2)
 num **= 0.5; // numは10(100 ** 0.5)
 
-console.log(num) // 10
+console.log(num); // 10

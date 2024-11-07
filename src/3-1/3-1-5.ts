@@ -47,12 +47,12 @@ const obj1 = {
 const obj2 = {
   bar: -999,
   baz: -9999,
-}
+};
 
 const obj3 = {
   ...obj1,
   ...obj2,
-}
+};
 
 console.log(obj3); // {foo: 123, bar: -999, baz: -9999}
 // 両方に存在しているオブジェクトbarについては後に書かれているobj2のbarが採用される

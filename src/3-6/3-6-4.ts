@@ -19,24 +19,24 @@ export default {};
 // const {foo = 123} = obj;
 // console.log(foo); //null
 
-type Obj = {foo?: number};
+type Obj = { foo?: number };
 const obj1: Obj = {};
-const {foo = 500} = obj1;
+const { foo = 500 } = obj1;
 console.log(foo); // 500
 
 // デフォルト値は変数に対してだけではなく、ネストしたパターンに対しても使用することができる
 type NestObj = {
-  obj? :{
+  obj?: {
     foo: number;
-  }
+  };
 };
 const nested1: NestObj = {
-  obj: {foo: 123}
+  obj: { foo: 123 },
 };
 const nested2: NestObj = {};
 
-const {obj: {foo: foo1} = {foo: 500}} = nested1;
+const { obj: { foo: foo1 } = { foo: 500 } } = nested1;
 console.log(foo1); // 123
 
-const {obj: {foo: foo2} = {foo: 500}} = nested2;
+const { obj: { foo: foo2 } = { foo: 500 } } = nested2;
 console.log(foo2); // 500

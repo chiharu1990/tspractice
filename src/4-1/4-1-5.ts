@@ -18,10 +18,10 @@ type Human = {
 
 type ReturnObj = {
   bmi: number;
-}
+};
 
-const calcBMI = ({height, weight}:Human): ReturnObj => ({
-  bmi: weight / height ** 2
+const calcBMI = ({ height, weight }: Human): ReturnObj => ({
+  bmi: weight / height ** 2,
 });
 
 // 以下はコンパイルエラー：A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
@@ -29,5 +29,5 @@ const calcBMI = ({height, weight}:Human): ReturnObj => ({
 //   bmi: weight / height ** 2
 // };
 
-const uhyo: Human = {height: 1.84, weight: 72};
+const uhyo: Human = { height: 1.84, weight: 72 };
 console.log(calcBMI(uhyo));

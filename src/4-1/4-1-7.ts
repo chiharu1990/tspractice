@@ -18,13 +18,13 @@ export default {};
 // rest引数は通常の引数と併用できる
 const sum = (base: number, ...args: number[]): number => {
   let result = base * 1000;
-  for(const num of args){
+  for (const num of args) {
     result += num;
   }
   return result;
-}
+};
 
-console.log(sum(1,10,100)); // 1110 baseに1が入り、argsには[10,100]が入る
-console.log(sum(123,456)); // 123456
+console.log(sum(1, 10, 100)); // 1110 baseに1が入り、argsには[10,100]が入る
+console.log(sum(123, 456)); // 123456
 // console.log(sum()); // これはエラー： Expected at least 1 arguments, but got 0.
 // 最低一つの引数が必要だが、与えられた引数が0個であるという意味

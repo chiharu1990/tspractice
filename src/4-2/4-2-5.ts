@@ -1,7 +1,7 @@
 export default {};
 // MyFunc型は、boolean型のプロパティisUsedを持つオブジェクトであると同時に、number型を受け取る関数でもある
 type MyFunc = {
-  isUsed? : boolean;
+  isUsed?: boolean;
   (arg: number): void;
 };
 
@@ -19,10 +19,10 @@ double(1000); // 2000
 // 普通の関数型もコールシグネチャで表すことができる
 // 型FとGは同じ意味
 type F = (arg: string) => number;
-type G = {(arg: string): number;};
+type G = { (arg: string): number };
 
 // オブジェクト型がコールシグネチャを複数持つことも可能
 type SwapFunc = {
   (arg: string): number;
   (arg: number): boolean;
-}
+};

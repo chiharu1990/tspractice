@@ -2,16 +2,16 @@ export default {};
 
 type Animal = {
   name: string;
-}
+};
 // Familyの2つの型引数ParentとChildはどちらもオプショナルな型引数
 type Family<Parent = Animal, Child = Animal> = {
   mother: Parent;
   father: Parent;
   Child: Child;
-}
+};
 
 // 通常通りの使い方
-type S = Family<string,string>;
+type S = Family<string, string>;
 // TはFamily<Animal, Animal>と同じ
 type T = Family;
 // UはFamily<string,Animal>と同じ

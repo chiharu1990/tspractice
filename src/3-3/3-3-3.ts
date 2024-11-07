@@ -11,16 +11,15 @@ export default {};
 //   telNumber: "09012345678"
 // }
 
-
 // エラーが発生しない例
 type User = {
   name: string;
   age: number;
-}
+};
 const obj = {
   name: "uhyo",
   age: 26,
-  telNumber: "09012345678"
-}
+  telNumber: "09012345678",
+};
 
 const u: User = obj;
