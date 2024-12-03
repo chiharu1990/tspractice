@@ -1,8 +1,20 @@
 ## エラーオブジェクトとは何か (throw 文との関係性を含めて説明すること)
 
-エラーが発生した時に catch 文で拾うことができるオブジェクト。
-`new Error()`で作成できる  
-throw 文と使うことで、try-catch 文で例外を投げることができる。
+エラーオブジェクトは`new Error("エラーメッセージ")`で作成できる  
+throw 文は try-catch 文でエラーオブジェクトを例外として投げることができる
+
+投げられたエラーオブジェクトは catch 節から取得できる  
+渡したエラーメッセージは message プロパティで参照できる
+
+```
+try{
+  throw new Error("エラーメッセージ");
+} catch(error){
+  console.log(error.message); // => "エラーメッセージ"
+}
+```
+
+throw 文は基本的に Error オブジェクトを投げることを推奨する。（スタックトレースのため）
 
 ## 次のコードのうち、catch 節が実行される可能性があるものを選択すること
 
@@ -45,7 +57,8 @@ try {
 }
 ```
 
-(4) 実行される
+(4) 実行されない  
+memo: await は async とペアだと思っていたから syntax エラーだと思ったが、json のデータが取れている
 
 ```
 try {
@@ -69,7 +82,7 @@ try {
 
 ## 次のコードの問題点を回答すること
 
-関数 `doAwesomeThing` で作成したエラーオブジェクトの中身が関数 `main` の catch 節で上書きされてしまい、本来のエラーメッセージである`"something wrong..."`が参照できないこと。
+関数 `doAwesomeThing` で作成したエラーオブジェクトが関数 `main` の catch 節で新たな Error オブジェクトを throw しているため、本来のエラーのスタックトレースである`"something wrong..."`が失われている
 
 ```
 function main() {
@@ -80,7 +93,7 @@ function main() {
   }
 }
 
-main();
+main(); // => "Error happens at `doAwesomeThing`"
 
 function doAwesomeThing() {
   throw new Error("something wrong...");
@@ -89,6 +102,10 @@ function doAwesomeThing() {
 
 ## スタックトレースとは何か
 
+プログラムの実行過程を記録した内容で、どの処理によってエラーが発生したかが記録されている
+これによってどこでエラーが発生しているのかをエラーメッセージで確認することができる
+
 ## finally 節とは何か
 
-try-catch 文において、try で実行した結果がエラーであってもそうでなくても finally 節は必ず実行される。
+finally 節は、try ブロック内で例外が発生したかどうかに関わらず、必ず try 文の最後で実行される  
+catch 節と finally 節のうち、片方が存在していれば、もう片方の節は省略できる。finally 節のみを書いた場合は例外がキャッチされないため、finally 節を実行後に例外が発生する。
