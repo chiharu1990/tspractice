@@ -94,15 +94,17 @@ console.log("1秒後に実行する"); // 上記のsleep関数で1秒経過し�
 function sleep(time) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("1秒後に実行する");
       resolve();
     }, time);
   });
 }
+
 async function sleepExecution() {
   await sleep(1000);
+  console.log("1秒後に実行する");
 }
 sleepExecution();
+
 ```
 
 ## https://httpbin.org/json に fetch API を使ってリクエストし、fetch API でエラーが発生した際には「通信でエラーが発生しました。しばらく経ってから再度お試しください」というエラーを Console に出力するコードを書く
