@@ -111,11 +111,19 @@ sleepExecution();
 
 ```
 const url = "https://httpbin.org/json";
-fetch(url)
-  .then(() => {
-    console.log("成功");
-  })
-  .catch(() => {
-    console.log("通信でエラーが発生しました。しばらく経ってから再度お試しください");
-  });
+
+function fetchData(url) {
+  fetch(url)
+    .then(() => {
+      console.log("成功");
+    })
+    .catch(() => {
+      console.log("通信でエラーが発生しました。しばらく経ってから再度お試しください");
+    });
+}
+async function asyncFetch() {
+  await fetchData(url);
+}
+
+asyncFetch();
 ```
