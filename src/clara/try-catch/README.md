@@ -226,9 +226,10 @@ CORS => Cross-Origin Resource Sharing の略
 
 あるオリジンから取得したリソースから、別のオリジンのリソースへのアクセスを禁止するブラウザの機能のこと。
 オリジンとは、Web コンテンツにアクセスするために使われる URL のスキーム（プロトコル）、ホスト（ドメイン）、ポート番号によって定義されるもの。  
-今回の問題の場合だと、`https://example.com/`がオリジン
+今回の問題の場合だと、`https://example.com/`がオリジン  
+同一オリジンポリーによって、悪意のある可能性のあるウェブサイトからの攻撃を防ぐことができる。
 
-### CORS(Cross ー Origin Resource Sharing)
+### CORS(Cross-Origin Resource Sharing)
 
 CORS は、クロスオリジン（異なるオリジン）からでもリソースを要求できる仕組み。  
 異なるオリジンからのリソースを読み込むには、バックエンド側で`Access-Control-Allow-Origin`とレスポンスに設定する必要がある。
