@@ -30,7 +30,6 @@ Promise の利点は、複数の非同期処理を行うときにコールバッ
 const promiseFunc = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(3);
       resolve("成功しました");
     }, 1000);
   });
