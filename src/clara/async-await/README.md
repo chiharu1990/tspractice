@@ -10,7 +10,7 @@ const someAsyncFunction = () => {
 };
 
 async function example(){
-  let result = await someAsyncFunction();
+  const result = await someAsyncFunction();
   console.log(result); // => 1
 }
 example();
