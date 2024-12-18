@@ -17,7 +17,24 @@ example();
 ```
 
 await は`someAsyncFunction()`が返す Promise が解決されたら、結果を result に代入する。  
-関数の実行は`someAsyncFunction()`が解決するまで一時停止し、その後に続くコードが実行される。
+関数の実行は`someAsyncFunction()`が解決するまで一時停止し、その後に続くコードが実行される。  
+`someAsyncFunction()`で使用している`Promise.resolve()`のような構文のことを糖衣構文（シンタックスシュガー）という。  
+糖衣構文とは、同じ意味の処理を元の構文よりもシンプルに記述することができる。  
+`Promise.resolve()`を用いずに書くと以下のようになる。
+
+```
+const someAsyncFunction = () => {
+  return new Promise((resolve) => {
+    resolve(1);
+  });
+};
+
+async function example(){
+  const result = await someAsyncFunction();
+  console.log(result); // => 1
+}
+example();
+```
 
 ## Promise とは何か (どのような利点があるかも説明すること。また、Promise を使ったコード例を 1 つ書くこと)
 
