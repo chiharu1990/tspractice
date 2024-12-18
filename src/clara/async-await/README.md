@@ -127,19 +127,15 @@ sleepExecution();
 ## https://httpbin.org/json に fetch API を使ってリクエストし、fetch API でエラーが発生した際には「通信でエラーが発生しました。しばらく経ってから再度お試しください」というエラーを Console に出力するコードを書く
 
 ```
-const url = "https://httpbin.org/json";
-
-function fetchData(url) {
-  fetch(url)
-    .then(() => {
-      console.log("成功");
-    })
-    .catch(() => {
-      console.log("通信でエラーが発生しました。しばらく経ってから再度お試しください");
-    });
-}
 async function asyncFetch() {
-  await fetchData(url);
+  const url = "https://httpbin.org/json";
+
+  try {
+    const res = await fetch(url);
+    console.log("成功", res);
+  } catch (error) {
+    console.log("通信でエラーが発生しました。しばらく経ってから再度お試しください");
+  }
 }
 
 asyncFetch();
