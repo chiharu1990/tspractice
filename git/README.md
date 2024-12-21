@@ -254,5 +254,6 @@ stash@{n}は各スタッシュの個別の名前
 - `git restore --staged <ファイル名>` ステージした該当のファイルをステージングエリアから下ろす
 - `git restore --staged .` 全てのステージされたファイルの変更をステージングエリアから下ろす
 - `git restore --worktree <ファイル名>` 作業ディレクトリの変更内容を取り消し、直前のコミットの状態に戻す
+- `git restore --source <コミットID> <ファイル名>` 特定のファイルを特定のコミット時点に戻す
 
 ## git cherry-pick
