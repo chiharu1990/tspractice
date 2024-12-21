@@ -257,3 +257,18 @@ stash@{n}は各スタッシュの個別の名前
 - `git restore --source <コミットID> <ファイル名>` 特定のファイルを特定のコミット時点に戻す
 
 ## git cherry-pick
+
+別のブランチから今いるブランチへ、必要なコミットだけを適用することができるコマンド  
+cherry-pick を実行すると、取り込みたい内容がそのままコミットされる。
+`git cherry-pick <コミットID>`
+
+- `git cherry-pick <コミットID -1> <コミットID -2>` 複数のコミットを取り込みたい場合は、コミット ID を続けて指定していく
+- `git cherry-pick -n <コミットID>` コミットせずに作業ディレクトリだけに変更を止める場合は、`-n` オプションを使用する
+- `git cherry-pick -e <コミットID>` コミットメッセージを変更する場合、`-e`オプションを使用する
+- `git cherry-pick -x <コミットID>` cherry-pick したコミットのコミット ID を明記する
+
+### コンフリクトが発生した場合
+
+cherry-pick を実行中にコンフリクトが発生した場合、コンフリクトを解消後、
+`git cherry-pick --continue`で続行する  
+変更を取り消したい場合は、`git cherry-pick --abort`で取り消すことができる
